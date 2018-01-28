@@ -78,5 +78,17 @@ attachEvent/detachEvent 与 addEventListener/removeEventListener 的区别：
 * 通过 attachEvent/detachEvent 绑定的事件函数以绑定时的先后顺序倒序被执行
 * attachEvent/detachEvent 的第一个参数要在事件名称前面加 'on'
  
+#### Event对象的常见应用
+* event.target 获取触发事件的元素
+* event.currentTarget 事件所绑定到的元素
+* event.bubbles 事件是否冒泡
+* event.cancelable 事件是否可以取消事件默认行为
+* event.preventDefault() 阻止默认行为，例如a链接(只有 event.cancelable 属性为 true 的事件，才能够通过 preventDefault() 方法取消默认行为)
+
+
+
+
+
+
 
  
