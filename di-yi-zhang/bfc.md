@@ -27,7 +27,12 @@ BFC的应用
 * 防止margin重叠
   * 因为BFC内相邻元素的margin值会重叠，如果给其中一个元素包一层，并设置为BFC，又因为BFC内子元素的布局与外部元素互不影响的特性，就可以解决重叠的问题
 
+扩展：
 **IFC**(Inline Formatting Contexts)直译为"内联格式化上下文"，IFC的line box（线框）高度由其包含行内元素中最高的实际高度计算而来（不受到竖直方向的padding/margin影响)
+
+**GFC**(GridLayout Formatting Contexts)直译为"网格布局格式化上下文"，当为一个元素设置display值为grid的时候，此元素将会获得一个独立的渲染区域，我们可以通过在网格容器（grid container）上定义网格定义行（grid definition rows）和网格定义列（grid definition columns）属性各在网格项目（grid item）上定义网格行（grid row）和网格列（grid columns）为每一个网格项目（grid item）定义位置和空间。
+
+**FFC**(Flex Formatting Contexts)直译为"自适应格式化上下文"，display值为flex或者inline-flex的元素将会生成自适应容器（flex container），可惜这个牛逼的属性只有谷歌和火狐支持，不过在移动端也足够了，至少safari和chrome还是OK的，毕竟这俩在移动端才是王道。
 
 ### IE haslayout
 IE 是个奇葩，自己搞一个叫做 haslayout 的东西，类似 BFC，一般在 IE 中显示有问题的东西都可以通过触发 haslayout 来解决，触发方法有很多：
