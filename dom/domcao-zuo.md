@@ -915,3 +915,4 @@ window.getComputedStyle()
 * 如果一个 `<script>` 元素同时存在 `defer` 和 `async` ，`async` 的优先级高
 * 注意：使用JavaScript动态创建的 `<script>` 元素，并添加到DOM，那么该脚本将强制按照 `async` 的规则下载与执行
 * 通过 `<script>` 元素的 `onload`、`onerror`、`load`、`error` 等事件，可以监听异步下载的JavaScript的下载情况
+
