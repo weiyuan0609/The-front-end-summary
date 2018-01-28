@@ -2,7 +2,7 @@
 
  * DOM0 element.onclick=function(){}
  * DOM2 element.addEventListener('click', function(){}, false)(false是冒泡，true是捕获)
- * DOM3 element.addEventListener('keyup', function(){}, false)(DOM3级事件模块在DOM2级事件的基础上重新定义了下方事件，也添加了一些新事件。包括IE9在内的主流浏览器都支持DOM2级事件，IE9也支持DOM3级事件。)
+ * DOM3 element.addEventListener('keyup', function(){}, false)(DOM3级事件模块在DOM2级事件的基础上重新定义了一些事件，也添加了一些新事件，如下。包括IE9在内的主流浏览器都支持DOM2级事件，IE9也支持DOM3级事件。)
    * UI事件，当用户与页面上的元素交互时触发；
    * 焦点事件，当元素获得或者失去焦点时触发；
    * 鼠标事件，当用户通过鼠标在页面上执行操作时触发；
