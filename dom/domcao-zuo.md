@@ -596,7 +596,7 @@ data-a-a 将要这样访问： el.dataset.aA (即转为驼峰)，可以使用 de
 * 返回值：
     * `{Element | Null}` 匹配的元素节点 或 null
 
-<p class="tip">除了 document.querySelector() 外，还可以在指定元素下使用该方法 el.querySelector()</p>
+除了 document.querySelector() 外，还可以在指定元素下使用该方法 el.querySelector()
 
 ###### querySelectorAll(selector)
 
@@ -608,11 +608,9 @@ data-a-a 将要这样访问： el.dataset.aA (即转为驼峰)，可以使用 de
 * 返回值：
     * `{Array}` 匹配的元素节点 或 null
 
-<p class="tip">
 注意：querySelectorAll() 方法返回的节点集合是创建时文档的快照，并不是实时动态的。而 getElementsByTagName 和 getElementsByClassName 返回的节点集合则是动态的
 
 加特技：除了 document.querySelectorAll() 外，还可以在指定元素下使用该方法 el.querySelectorAll()
-</p>
 
 ###### getElementsByClassName(className)
 
@@ -624,19 +622,11 @@ data-a-a 将要这样访问： el.dataset.aA (即转为驼峰)，可以使用 de
 * 返回值：
     * `{节点集合}` 节点集合
 
-<p class="tip">除了 document.getElementsByClassName() 外，还可以在指定元素下使用该方法 el.getElementsByClassName()</p>
+除了 document.getElementsByClassName() 外，还可以在指定元素下使用该方法 el.getElementsByClassName()
 
 ###### getElementsByTagName(tagName)
 
-* 描述：根据class值匹配并返回节点集合
-
-* 参数：
-    * `{String} tagName` 标签名
-
-* 返回值：
-    * `{节点集合}` 节点集合
-
-<p class="tip">除了 document.getElementsByTagName() 外，还可以在指定元素下使用该方法 el.getElementsByTagName()</p>
+* 描述：根据class值匹配并返回节点集合除了 document.getElementsByTagName() 外，还可以在指定元素下使用该方法 el.getElementsByTagName()
 
 ###### getElementsByName(name)
 
@@ -712,7 +702,7 @@ offsetParent 的取值规则：
 * 读写特性：只读
 * 描述：获取滚动元素的宽度
 
-<p class="tip">注意：如果滚动区域内的子节点比滚动区域小，那么该属性返回滚动区域的宽度</p>
+注意：如果滚动区域内的子节点比滚动区域小，那么该属性返回滚动区域的宽度
 
 ###### scrollTop
 * 读写特性：读写
@@ -748,9 +738,8 @@ offsetParent 的取值规则：
             height
         }
         ```
-<p class="tip">
+
     加特技：返回值中，width 和 height 为元素 （边框 + 填充 + 内容）的高度和宽度，与调用元素的 offsetHeight 与 offsetWidth 属性的返回值相同
-</p>
 
 ###### scrollIntoView(position)
 
@@ -759,138 +748,6 @@ offsetParent 的取值规则：
 * 参数：
     * `{Boolean} position` true 滚动该元素到视区顶部，false 滚动该元素到视区底部。默认为 true
 
-## 四、文本节点
-
-#### 概述
-
-* 节点类型：TEXT_NODE ---- 3
-* 继承链： Object -> EventTarget -> Node -> CharacterData -> Text -> 'asdfasdg'
-
-#### 文本节点属性
-
-###### length
-* 描述：文本节点拥有length属性，返回该节点文本内容的长度
-
-###### data
-* 描述：返回文本节点的字符串内容 与 nodeValue 的值相同
-
-###### nodeValue
-* 描述：与 data 属性的值相同
-
-#### 文本节点方法
-
-###### appendData(text)
-
-* 描述：将text追加到节点末尾
-
-* 参数：
-    * `{String} text` 要追加的字符串
-
-###### insertData(offset, text)
-
-* 描述：在 offset 指定的位置前插入字符串 text
-
-* 参数：
-    * `{Number} offset` 位置
-    * `{String} text` 要追加的字符串
-
-###### deleteData(offset, count)
-
-* 描述：在 offset 指定的位置开始，删除 count 个字符，包括 offset 位置
-
-* 参数：
-    * `{Number} offset` 位置
-    * `{Number} count` 删除字符的数量
-
-###### replaceData(offset, count, text)
-
-* 描述：使用字符串 text 替换从 offset 指定的位置开始 count 个字符，包括 offset 位置
-
-* 参数：
-    * `{Number} offset` 位置
-    * `{Number} count` 删除字符的数量
-    * `{String} text` 字符串
-
-###### substringData(offset, count)
-
-* 描述：获取从 offset 指定的位置开始 count 个字符，包括 offset 位置
-
-* 参数：
-    * `{Number} offset` 位置
-    * `{Number} count` 获取字符的数量
-
-* 返回值：
-    * `{String}` 获取到的字符串
-
-###### splitText(offset)
-
-* 描述：从 offset 指定的位置将调用该方法的文本节点分割成两个文本节点
-
-* 参数：
-    * `{Number} offset` 分割的位置，该位置将包含在后一个文本节点中
-
-* 返回值：
-    * `{TEXT_NODE}` 后一个文本节点的内容。
-
-## 五、CSS 样式 与 样式表
-
-#### CSS 样式
-
-###### 元素的内联样式(style 属性)
-
-```js
-// 访问元素的 style 属性[el.style]，将返回 CSSStyleDeclaration 对象，仅包含该元素的内联样式，而不是计算后样式
-
-el.style.驼峰属性名
-el.style.setProperty('css属性', '值')
-el.style.getProperty('css属性')
-el.style.removeProperty('css属性')
-
-// 使用一个由一系列css属性和值的字符串设置style的值
-// 例：el.style.cssText = "width: 200px; height: 200px; background: red;"
-el.style.cssText
-```
-
-###### 获取元素的计算后样式
-
-* window.getComputedStyle(element)
-
-* 描述：获取元素计算后的样式
-
-* 参数：
-    * `{Element} element` 元素
-
-* 返回值：
-    * `{CSSStyleDeclaration}` 包含元素属性键值对的对象
-
-<p class="tip">
-与 el.style 一样，返回 CSSStyleDeclaration 对象，但不同的是，使用 getComputedStyle 获得的 CSSStyleDeclaration 对象下的属性时只读的，而通过 style 属性获得的 CSSStyleDeclaration 是可设置的。
-另外，getComputedStyle 获得的颜色值始终都是 rgb() 格式，而通过style获得的颜色值就是你再内敛样式中所写的样子，并且在通过 getComputedStyle 获取的 transform 属性值为矩阵 matrix
-</p>
-
-```
-window.getComputedStyle()
-作用：使用 window.getComputedStyle(el) 可以获取元素计算后的样式
-一个参数：元素
-返回值：与 el.style 一样，返回 CSSStyleDeclaration 对象，但不同的是，使用 getComputedStyle 获得的 CSSStyleDeclaration 对象下的属性时只读的，而通过 style 属性获得的 CSSStyleDeclaration 是可设置的。
-另外，getComputedStyle 获得的颜色值始终都是 rgb() 格式，而通过style获得的颜色值就是你再内敛样式中所写的样子，并且在通过 getComputedStyle 获取的 transform 属性值为矩阵 matrix
-```
-
-#### CSS样式表 与 CSS规则
-
-###### CSS样式表
-
-使用 `<link>` 和 `<style>` 标签可以分别创建 外部 和 内部 样式表，一旦样式表被添加到HTML文档中，每个样式表将表示为一个 `CSSStyleSheet` 对象。该对象可以通过 `<link>` 或 `<style>` 标签元素的 sheet 属性访问： el.sheet
-
-###### CSS规则
-
-每个样式表都是由一条条规则组成的(如：`body{background-color: red;` 为一条规则)，CSS规则表示为一个 `CSSStyleRule` 对象，可以通过 `el.sheet.cssRules[n]` 或者 `el.sheet.rules[n]` 访问该样式表的第 `n` 条规则
-
-###### 访问所有样式表
-
-可以使用 `document.styleSheets` 访问该文档的所有样式表，该属性返回由 `CSSStyleSheet` 对象组成的 `StyleSheetList` 对象
-
-## 六、DOM中的JavaScript
 
 #### JavaScript默认是同步解析的
 
