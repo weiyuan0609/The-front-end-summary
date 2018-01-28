@@ -100,7 +100,17 @@ attachEvent/detachEvent 与 addEventListener/removeEventListener 的区别：
 
 #### 自定义事件
 
+```
+    var ev = document.getElementById('ev');
+    var eve = new Event('test');
+        ev.addEventListener('test', function () {
+            console.log('test dispatch');
+        });
+        setTimeout(function () {
+            ev.dispatchEvent(eve);
+        }, 1000); 
 
+```
 
 
 
