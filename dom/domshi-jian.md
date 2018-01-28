@@ -98,6 +98,8 @@ attachEvent/detachEvent 与 addEventListener/removeEventListener 的区别：
 | stopPropagation() | cancelBubble = true   |
 ```
 
+#### 自定义事件
+
 
 
 
