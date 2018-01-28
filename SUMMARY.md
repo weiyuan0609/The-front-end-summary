@@ -7,5 +7,5 @@
   * [BFC](di-yi-zhang/bfc.md)
 * [DOM](dom.md)
   * [DOM操作](dom/domcao-zuo.md)
-  * DOM事件
+  * [DOM事件](dom/domshi-jian.md)
 
