@@ -84,7 +84,8 @@ attachEvent/detachEvent 与 addEventListener/removeEventListener 的区别：
 * event.bubbles 事件是否冒泡
 * event.cancelable 事件是否可以取消事件默认行为
 * event.preventDefault() 阻止默认行为，例如a链接(只有 event.cancelable 属性为 true 的事件，才能够通过 preventDefault() 方法取消默认行为)
-
+* event.stopPropagation() 阻止冒泡
+* event.stopImmediatePropagation() 事件优先级（与 event.stopPropagation() 一样，可以阻止事件冒泡，除此之外，还能阻止执行该语句之后的所有事件监听）
 
 
 
