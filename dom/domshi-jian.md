@@ -28,7 +28,7 @@ DOM事件捕获的流程：window->document->html->body->....->目标元素
 
 #### 绑定事件
 
-#### 标准方法
+##### 标准方法
 
 ###### el.addEventListener(eventName, handle, useCapture)
 
@@ -51,7 +51,7 @@ DOM事件捕获的流程：window->document->html->body->....->目标元素
 如果要移除一个通过 addEventListener 添加的事件处理函数，那么给 removeEventListener 传递的两个参数必须与 addEventListener 的前两个参数完全相同。这意味着，给一个元素绑定匿名事件处理函数将无法被移除
 </p>
 
-#### IE8及以下
+##### IE8及以下
 
 addEventListener 和 removeEventListener 在IE8及以下不被支持
 
@@ -71,14 +71,12 @@ addEventListener 和 removeEventListener 在IE8及以下不被支持
     * `{String} eventName` 事件名称
     * `{Function} handle` 事件函数
     
-#### 对比
-
+##### 对比
 attachEvent/detachEvent 与 addEventListener/removeEventListener 的区别：
-
 * 由于IE8不支持事件捕获，所以通过 attachEvent/detachEvent 绑定的时间也只能在冒泡阶段触发
 * 通过 attachEvent/detachEvent 绑定的事件函数会在全局作用域中运行，即： this === window
 * 通过 attachEvent/detachEvent 绑定的事件函数以绑定时的先后顺序倒序被执行
 * attachEvent/detachEvent 的第一个参数要在事件名称前面加 'on'
  
- 
+
  
