@@ -10,4 +10,5 @@
   * [DOM操作](dom/domcao-zuo.md)
   * [DOM事件](dom/domshi-jian.md)
 * [BOM](bom.md)
+* [JS相关](jsxiang-guan.md)
 
