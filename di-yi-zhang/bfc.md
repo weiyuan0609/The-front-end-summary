@@ -1,4 +1,4 @@
-## BFC（Block Formatting Contexts）块级格式化上下文
+## BFC（Block Formatting Contexts）块级格式化上下文（边距重叠解决方案）
 
 概念：块格式化上下文（block formatting context） 是页面上的一个独立的渲染区域，容器里面的子元素不会在布局上影响到外面的元素。它是决定块盒子的布局及浮动元素相互影响的一个因素。
 
@@ -16,3 +16,4 @@ BFC布局规则如下(注意BFC只影响块儿级盒)：
 * position 属性的值为 absolute 或 fixed
 * overflow 属性值不为 visible
 * display 属性值为 inline-block, table-cell, table-caption
+
