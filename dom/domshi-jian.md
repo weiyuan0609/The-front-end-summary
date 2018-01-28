@@ -103,14 +103,15 @@ attachEvent/detachEvent 与 addEventListener/removeEventListener 的区别：
 ```
     var ev = document.getElementById('ev');
     var eve = new Event('test');
-        ev.addEventListener('test', function () {
-            console.log('test dispatch');
-        });
-        setTimeout(function () {
-            ev.dispatchEvent(eve);
-        }, 1000); 
+    ev.addEventListener('test', function () {
+        console.log('test dispatch');
+    });
+    setTimeout(function () {
+        ev.dispatchEvent(eve);
+    }, 1000); 
 
 ```
+注意： Event和CustomEvent都是自定义事件，但是后者可以跟一个Object指定参数
 
 
 
