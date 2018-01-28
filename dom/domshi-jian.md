@@ -87,9 +87,7 @@ attachEvent/detachEvent 与 addEventListener/removeEventListener 的区别：
 * event.stopPropagation() 阻止冒泡
 * event.stopImmediatePropagation() 事件优先级（与 event.stopPropagation() 一样，可以阻止事件冒泡，除此之外，还能阻止执行该语句之后的所有事件监听）
 
-<p class="tip">
 在规范中，事件处理函数的this对象始终等于 event.currentTarget 属性，但在IE中就不一定。比如：使用 attachEvent 绑定的事件处理函数是在全局作用域中运行的，所以this对象指向window，而不是 event.srcElement
-</p>
 
 ###### 对比
 ```
