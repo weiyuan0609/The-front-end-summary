@@ -17,3 +17,9 @@ BFC布局规则如下(注意BFC只影响块儿级盒)：
 * overflow 属性值不为 visible
 * display 属性值为 inline-block, table-cell, table-caption
 
+
+### IE haslayout
+IE 是个奇葩，自己搞一个叫做 haslayout 的东西，类似 BFC，一般在 IE 中显示有问题的东西都可以通过触发 haslayout 来解决，触发方法有很多：
+* zoom 属性设置为除 normal 以外的值
+* width/height 除 auto 以外的值
+* float 除 none 以外的值
