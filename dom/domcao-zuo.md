@@ -72,9 +72,9 @@ Node构造函数的属性，也是节点属性 nodeType 的值
     读：读取元素节点的内容(标签和文本)作为JavaScript字符串
 
     写：设置元素节点的内容(标签将被解析为真正的HTML元素)。
-<p class="tip">
+
     注意：因为 innerHTML 会调用一个沉重且高消耗的HTML解析器。所以慎用
-</p>
+
 
 ###### outerHTML
 * 读写特性：读写
@@ -92,11 +92,9 @@ Node构造函数的属性，也是节点属性 nodeType 的值
 
     写：将JavaScript字符串创建为文本节点作为该元素的子节点(原有的所有子节点将被删除)
 
-<p class="tip">
     注意：在 文档节点(document) 或 文档类型节点(document.doctype) 调用 textContent 返回 null
         textContent 属性也能返回 `<script>` `<style>` 标签的内容
-</p>
-
+        
 ###### childNodes
 * 读写特性：只读
 * 描述：
@@ -229,9 +227,7 @@ Node构造函数的属性，也是节点属性 nodeType 的值
 * 返回值：
     * `{Element}` 克隆的节点
 
-<p class="tip">
 注意：无论深复制还是浅复制，都只会复制节点的内联事件，任何通过 addEventListener 或 onxxx 添加的事件都不会被复制
-</p>
 				
 ###### contains(element)
 
@@ -549,9 +545,7 @@ el.classList.length		// el元素拥有类的数量
 * 读写特性：只读
 * 描述：返回一个对象，包含元素所有以 data-* 起始的属性
 
-<p class="tip">
 data-a-a 将要这样访问： el.dataset.aA (即转为驼峰)，可以使用 delete 语句删除一个data属性，另外IE9不支持该属性，可以使用 getAttribute/setAttribute/removeAttribute/hasAttribute 代替
-</p>
 
 #### 元素节点方法
 
@@ -590,7 +584,7 @@ data-a-a 将要这样访问： el.dataset.aA (即转为驼峰)，可以使用 de
 * 返回值：
     * `{Boolean}` true 有，false 没有
 
-<p class="tip">因为 hasAttribute() 方法可以为布尔值型属性取得布尔值反馈，所以可以用来判断单选框复选框是否被选中</p>
+因为 hasAttribute() 方法可以为布尔值型属性取得布尔值反馈，所以可以用来判断单选框复选框是否被选中
 
 ###### querySelector(selector)
 
