@@ -17,6 +17,15 @@ BFC布局规则如下(注意BFC只影响块儿级盒)：
 * overflow 属性值不为 visible
 * display 属性值为 inline-block, table-cell, table-caption
 
+BFC的应用
+* 自适应两栏布局
+  * 利用的是 BFC 不与浮动元素重叠的特性
+* 清楚浮动
+  * 利用BFC内浮动元素也参与BFC高度计算的特性
+* 解决margin折叠(传递)
+  * 子元素的margin-top传递到父级
+* 防止margin重叠
+  * 因为BFC内相邻元素的margin值会重叠，如果给其中一个元素包一层，并设置为BFC，又因为BFC内子元素的布局与外部元素互不影响的特性，就可以解决重叠的问题
 
 ### IE haslayout
 IE 是个奇葩，自己搞一个叫做 haslayout 的东西，类似 BFC，一般在 IE 中显示有问题的东西都可以通过触发 haslayout 来解决，触发方法有很多：
