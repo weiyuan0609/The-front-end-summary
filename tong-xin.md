@@ -11,7 +11,7 @@
 2. websocket(不受同源策略影响)
 3. CORS
 
-#### AJax请求和原理
+#### AJax请求和原理（IE低版本ActiveXObjext）
 
     var xhr = new XMLHTTPRequest()
     // 请求method 和url
