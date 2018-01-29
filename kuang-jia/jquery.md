@@ -1,5 +1,6 @@
 参考：
 http://blog.csdn.net/SUFEIDEYEYE/article/details/51810912 
+https://www.cnblogs.com/changyangzhe/p/5762061.html
 
 #### body中的onload()函数和jQuery中的document.ready()有什么区别？
 1、我们可以在页面中使用多个document.ready()，但只能使用一次onload()。
