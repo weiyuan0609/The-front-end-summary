@@ -44,3 +44,6 @@
 响应报文中包含一个重要的信息，状态码（看HTTP章节）
 
 6. 渲染页面（过程看上方渲染机制一栏）
+
+一个完整HTTP请求的过程为：
+DNS Resolving -> TCP handshake -> HTTP Request -> Server -> HTTP Response -> TCP shutdown
