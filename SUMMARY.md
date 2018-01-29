@@ -39,7 +39,7 @@
 * [模块化](mo-kuai-hua.md)
 * [构建工具](gou-jian-gong-ju.md)
   * [git](gou-jian-gong-ju/git.md)
-  * gulp
+  * [gulp](gou-jian-gong-ju/gulp.md)
   * [webpack](gou-jian-gong-ju/webpack.md)
 * [移动端](yi-dong-duan.md)
 * [Node](node.md)
