@@ -11,6 +11,9 @@
   * [DOM事件](dom/domshi-jian.md)
 * [BOM](bom.md)
 * [JS相关](jsxiang-guan.md)
+  * 原型和原型链
+  * 作用域和闭包
+  * 异步和单线程
 * 网络
   * [HTTP](http.md)
   * [HTTP2.0 和HTTPS](http20-he-https.md)
