@@ -25,3 +25,4 @@
     xhr.readyState
     // 响应内容
     xhr.responseText
+    
