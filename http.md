@@ -22,7 +22,7 @@
 #### HTTP方法
 GET, POST, PUT, DELETE, HEAD
 
-#### POST和GET的区别
+#### POST和GET的区别（大小，安全，传递方式等几个方面考虑）
 1. GET在浏览器回退时是无害的，而POST会再次请求
 2. GET请求会在浏览器主动缓存，而POST不会，除非手动设置
 3. GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会保留
