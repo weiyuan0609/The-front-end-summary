@@ -32,7 +32,7 @@
   * [事件循环](shi-jian-xun-huan.md)
   * [设计模式](she-ji-mo-shi.md)
 * 框架
-* 模块化
+* [模块化](mo-kuai-hua.md)
 * [构建工具](gou-jian-gong-ju.md)
   * [git](gou-jian-gong-ju/git.md)
 
