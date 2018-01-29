@@ -34,4 +34,13 @@ CDN的工作原理：通过dns服务器来实现优质节点的选择，通过�
 * 协商缓存
     1. If-Modified-Since Last-Modified
     2. IF-None-Match Etag
- 
+    
+注意：
+* 如果同时有 etag 和 last-modified 存在，在发送请求的时候会一次性的发送给服务器，没有优先级，服务器会比较这两个信息.
+* 如果expires和cache-control:max-age同时存在，expires会被cache-control 覆盖。
+
+**
+强缓存与协商缓存区别**：强缓存不发请求到服务器，协商缓存会发请求到服务器。
+
+#### 浏览器输入 url 之后敲下回车，刷新 F5 与强制刷新(Ctrl + F5)，又有什么区别？
+实际上浏览器输入 url 之后敲下回车就是先看本地 cache-control、expires 的情况，刷新(F5)就是忽略先看本地 cache-control、expires 的情况，带上条件 If-None-Match、If-Modified-Since，强制刷新(Ctrl + F5)就是不带条件的访问。
