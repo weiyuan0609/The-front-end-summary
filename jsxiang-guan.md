@@ -21,4 +21,4 @@ function
 #### 何时使用==和===
 jquery源码中推荐的写法：
 当判断obj.a ==null（相当于obj.a===null||obj.a===undefined）
-除这个以外其他都用====
+除这个以外其他都用===
