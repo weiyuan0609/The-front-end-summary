@@ -34,4 +34,13 @@
 2）对搜索引擎支持较弱
 3）违背了URI和资源定位的初衷
 
+#### fetch 和ajax区别
+* XMLHTTPRequest是一个设计粗糙的 API，不符合关注分离（Separation of Concerns）的原则，配置和调用方式非常混乱，而且基于事件的异步模型写起来也没有现代的 Promise，generator/yield，async/await友好
+* fetch 是浏览器提供的一个新的 web API，它用来代替 Ajax（XMLHttpRequest），其提供了更优雅的接口，更灵活强大的功能。
+Fetch 优点主要有：
+  * 语法简洁，更加语义化
+  * 基于标准 Promise 实现，支持 async/await
 
+    fetch(url).then(response=>response.json())
+        .then(data=>console.log(data))
+        .catch(e=>console.log('error',e))
