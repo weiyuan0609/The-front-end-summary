@@ -34,7 +34,7 @@
 * [框架](kuang-jia.md)
   * [jquery](kuang-jia/jquery.md)
   * [vue](kuang-jia/vue.md)
-  * react
+  * [react](kuang-jia/react.md)
   * avalon
 * [模块化](mo-kuai-hua.md)
 * [构建工具](gou-jian-gong-ju.md)
