@@ -31,3 +31,15 @@ Vue 虽然通过 v-model 支持双向绑定，但是如果引入了类似redux�
 <input :value="something" @input="something = $event.target.value">
 ```
 也就是说，你只需要在组件中声明一个name为value的props，并且通过触发input事件传入一个值，就能修改这个value。
+
+#### vue 虚拟DOM和react 虚拟DOM的区别
+
+在渲染过程中，会跟踪每一个组件的依赖关系，不需要重新渲染整个组件树。而对于React而言，每当应用的状态被改变时，全部子组件都会重新渲染。
+在 React 应用中，当某个组件的状态发生变化时，它会以该组件为根，重新渲染整个组件子树。
+如要避免不必要的子组件的重新渲染，你需要在所有可能的地方使用 PureComponent，或是手动实现` shouldComponentUpdate` 方法
+
+在React中，数据流是自上而下单向的从父节点传递到子节点，所以组件是简单且容易把握的，子组件只需要从父节点提供的props中获取数据并渲染即可。如果顶层组件的某个prop改变了，React会递归地向下遍历整棵组件树，重新渲染所有使用这个属性的组件。
+
+#### v-show和v-if区别
+
+与v-if不同的是，无论v-show的值为true或false，元素都会存在于HTML代码中；而只有当v-if的值为true，元素才会存在于HTML代码中
