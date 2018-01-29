@@ -7,7 +7,7 @@
 * Ajax请求不能发送
 
 #### 前后端如何通讯
-1. Ajax（参考：https://segmentfault.com/a/1190000006669043）
+1. Ajax（参考：https://segmentfault.com/a/1190000006669043
 2. websocket(不受同源策略影响)
 3. CORS(参考：http://www.ruanyifeng.com/blog/2016/04/cors.html)
 
