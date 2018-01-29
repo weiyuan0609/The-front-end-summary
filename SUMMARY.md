@@ -29,6 +29,7 @@
   * [错误监控](cuo-wu-jian-kong.md)
   * [Promise原理](promiseyuan-li.md)
   * [事件循环](shi-jian-xun-huan.md)
+  * [设计模式](she-ji-mo-shi.md)
 * 框架
 * 模块化
 * [构建工具](gou-jian-gong-ju.md)
