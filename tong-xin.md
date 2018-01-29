@@ -48,7 +48,7 @@ Fetch 优点主要有：
         
 #### websoket
 WebSocket 使用ws或wss协议，Websocket是一个持久化的协议，相对于HTTP这种非持久的协议来说。WebSocket API最伟大之处在于服务器和客户端可以在给定的时间范围内的任意时刻，相互推送信息。WebSocket并不限于以Ajax(或XHR)方式通信，因为Ajax技术需要客户端发起请求，而WebSocket服务器和客户端可以彼此相互推送信息；XHR受到域的限制，而WebSocket允许跨域通信。
-```javascript
+```
 // 创建一个Socket实例
 var socket = new WebSocket('ws://localhost:8080');
 // 打开Socket
