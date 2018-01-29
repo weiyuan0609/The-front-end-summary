@@ -46,6 +46,6 @@
   * [页面布局](htmlandcss/ye-mian-bu-ju.md)
   * [css盒模型](htmlandcss/csshe-mo-xing.md)
   * [BFC](htmlandcss/bfc.md)
-  * DOCTYPE
+  * [DOCTYPE](htmlandcss/doctype.md)
   * 动画
 
