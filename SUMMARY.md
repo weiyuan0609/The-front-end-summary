@@ -25,4 +25,5 @@
 * [算法](suan-fa.md)
 * 进阶
   * [渲染机制](xuan-ran-ji-zhi.md)
+  * [页面性能](ye-mian-xing-neng.md)
 
