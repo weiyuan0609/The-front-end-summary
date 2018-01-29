@@ -22,3 +22,6 @@
 
 #### 原型链
 当从一个对象那里调取属性或方法时，如果该对象自身不存在这样的属性或方法，就会去自己关联的prototype对象那里寻找，如果prototype没有，就会去prototype关联的前辈prototype那里寻找，如果再没有则继续查找Prototype.Prototype引用的对象，依次类推，直到Prototype.….Prototype为undefined（Object的Prototype就是undefined）从而形成了所谓的“原型链”。
+
+#### isprototypeof
+用于测试一个对象是否存在于另一个对象的原型链上。判断父级对象   可检查整个原型链

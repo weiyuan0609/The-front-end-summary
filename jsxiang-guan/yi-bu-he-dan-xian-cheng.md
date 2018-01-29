@@ -30,3 +30,8 @@ async 好处：
 1）Generator 函数必须靠执行器，所以才有CO函数库，async函数自带执行器
 2）更好的语义
 3）更广的适用性。co函数库yield后面只能是Thunk函数或者Promise对象，await后面可以跟Promise对象和原始类型值（等同于同步操作）
+
+co函数库：
+* co可以说是给generator增加了promise实现。co是利用Generator的方式实现了async/await（co返回Promise对象，async也返回Promise对象，co内部的generator函数即async，yield相当于await）
+* co 函数库其实就是将两种自动执行器（Thunk 函数和 Promise 对象），包装成一个库。
+* co函数接收一个Generator生成器函数作为参数。执行co函数的时候，生成器函数内部的逻辑像async函数调用时一样被执行。不同之处只是这里的await变成了yield（产出）。
