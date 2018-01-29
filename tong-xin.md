@@ -18,3 +18,10 @@
     xhr.open(‘GET’, URL)
     // 请求内容
     xhr.send()
+    // 响应状态
+    xhr.status
+    // xhr的事件响应
+    xhr.onreadystatusrchange=function(){}
+    xhr.readyState
+    // 响应内容
+    xhr.responseText
