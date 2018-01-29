@@ -74,3 +74,18 @@ socket.onopen = function(event) {
 3. postMessage
 4. webSocket
 5. cors（origin fetch）
+
+#### JSONP
+* 原理：JSONP 的原理是利用 `<script> `标签的 src 属性加载资源不受同源策略影响，其本质是向服务端请求一段 js 代码。
+* 实现：
+  
+    let scriptTag = document.createElement('script')
+    // 其中cb是回调函数参数的名字，cbname是回调函数的名字，这两个名字要与服务端沟通定义
+    scriptTag.src = 'http://hcysun.me/xxx?cb=cbname'
+    document.body.appendChild(scriptTag)
+* 优点
+1. 可跨域
+2. 兼容性好，基本全部兼容
+* 缺点
+1. 只支持 GET 请求
+2. 确定JSONP请求是否失败并不容易，一般根据超时时间来判断
