@@ -19,3 +19,6 @@
 #### new 运算符
 1、创建一个空对象，并且this变量引用该对象，同时继承了该函数的原型（实例对象通过\_\_proto\_\_属性指向原型对象；obj.\_\_proto__ = Base.prototype;）
 2、属性和方法被加入到 this 引用的对象中。
+
+#### 原型链
+当从一个对象那里调取属性或方法时，如果该对象自身不存在这样的属性或方法，就会去自己关联的prototype对象那里寻找，如果prototype没有，就会去prototype关联的前辈prototype那里寻找，如果再没有则继续查找Prototype.Prototype引用的对象，依次类推，直到Prototype.….Prototype为undefined（Object的Prototype就是undefined）从而形成了所谓的“原型链”。
