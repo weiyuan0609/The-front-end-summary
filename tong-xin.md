@@ -8,7 +8,7 @@
 
 #### 前后端如何通讯
 1. Ajax（参考：https://segmentfault.com/a/1190000006669043
-2. websocket(不受同源策略影响)
+2. websocket(不受同源策略影响)(参考：http://www.ruanyifeng.com/blog/2017/05/websocket.html)
 3. CORS(参考：http://www.ruanyifeng.com/blog/2016/04/cors.html)
 
 #### AJax请求和原理（IE低版本ActiveXObjext）
