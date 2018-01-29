@@ -12,3 +12,7 @@
 3. error事件捕获
     window.addEventListener('error',function(e){console.log('捕获',e)},true)
 
+注意：跨域的js运行错误可以捕获，
+1. 在script标签增加crossorigin属性（客户端）
+2. 设置js资源响应头Access-control-allow-origin:* (服务器)
+
