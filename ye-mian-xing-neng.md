@@ -17,5 +17,8 @@ async 和 defer区别：
 1. defer是在HTML解析后才执行，如果是多个，按照加载顺序依次执行
 2. async是在加载完之后立即执行，如果是多个，执行顺序和加载顺序无关
 
-
+#### 预解析DNS
+    <link rel="dns-prefetch" href="//host_name_to_prefetch.com">
+    // HTTPS下默认关闭a标签DNS预解析，而下面是设置开启
+    <meta http-equiv="x-dns-prefetch-control" content="on">
     
