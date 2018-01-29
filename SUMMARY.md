@@ -15,6 +15,7 @@
   * [作用域和闭包](jsxiang-guan/zuo-yong-yu-he-bi-bao.md)
   * [异步和单线程](jsxiang-guan/yi-bu-he-dan-xian-cheng.md)
   * [继承](jsxiang-guan/oop.md)
+  * [存储](jsxiang-guan/cun-chu.md)
 * [网络和安全](wang-luo-he-an-quan.md)
   * [HTTP](http.md)
   * [HTTP2.0 和HTTPS](http20-he-https.md)
