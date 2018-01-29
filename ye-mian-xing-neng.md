@@ -32,5 +32,6 @@ CDN的工作原理：通过dns服务器来实现优质节点的选择，通过�
     1. Expires value值表示服务器绝对时间
     2. Cache-control value值表示相对时间，例：max-age=36000
 * 协商缓存
- 1. If-Modified-Since Last-Modified
- 2. IF-None-Match Etag
+    1. If-Modified-Since Last-Modified
+    2. IF-None-Match Etag
+ 
