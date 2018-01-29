@@ -21,4 +21,5 @@
   * [通信](tong-xin.md)
   * [安全](an-quan.md)
 * 正则表达式
+* [算法](suan-fa.md)
 
