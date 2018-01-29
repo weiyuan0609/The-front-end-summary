@@ -9,7 +9,7 @@
 #### 前后端如何通讯
 1. Ajax
 2. websocket(不受同源策略影响)
-3. CORS
+3. CORS(http://www.ruanyifeng.com/blog/2016/04/cors.html)
 
 #### AJax请求和原理（IE低版本ActiveXObjext）
 
