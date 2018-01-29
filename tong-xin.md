@@ -73,4 +73,4 @@ socket.onopen = function(event) {
 2. Hash 
 3. postMessage
 4. webSocket
-5. cors
+5. cors（origin fetch）
