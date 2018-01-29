@@ -44,3 +44,6 @@ Fetch 优点主要有：
     fetch(url).then(response=>response.json())
         .then(data=>console.log(data))
         .catch(e=>console.log('error',e))
+        
+        
+#### websoket
