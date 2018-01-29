@@ -12,10 +12,9 @@
 3. CORS
 
 #### AJax请求和原理
-```
+
     var xhr = new XMLHTTPRequest()
     // 请求method 和url
     xhr.open(‘GET’, URL)
     // 请求内容
     xhr.send()
-```
