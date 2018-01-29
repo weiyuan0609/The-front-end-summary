@@ -21,7 +21,7 @@
   * [HTTP2.0 和HTTPS](http20-he-https.md)
   * [通信](tong-xin.md)
   * [安全](an-quan.md)
-* 正则表达式
+* [正则表达式](zheng-ze-biao-da-shi.md)
 * [算法](suan-fa.md)
 * [进阶](jin-jie.md)
   * [渲染机制](xuan-ran-ji-zhi.md)
