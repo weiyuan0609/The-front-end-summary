@@ -72,7 +72,9 @@ GET, POST, PUT, DELETE, HEAD
 1. 管线化通过持久连接完成，仅HTTTP/1.1支持
 2. 只有GET和HEAD请求可以进行管线化，而POST则有所限制
 
-
+#### HTTP1.0 和 HTTP1.1区别
+1. 缓存处理，在HTTP1.0中主要使用header里的If-Modified-Since，Expires来做为缓存判断的标准，HTTP1.1则引入更多缓存控制策略，例如Entity tag,If-Match,If-None-Match等
+2. Http1.1支持长连接和请求的流水线（pipeline）处理，在一个TCP连接上可以传送多个HTTP请求和响应，减少了建立和关闭连接的消耗和延迟，默认开启Connection:keep-alive
 
 
 
