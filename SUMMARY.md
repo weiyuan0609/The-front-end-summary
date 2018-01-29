@@ -1,11 +1,12 @@
 # Summary
 
 * [介绍](README.md)
-* [html和css](di-yi-zhang.md)
-  * [css盒模型](di-yi-zhang/biao-zhun-mo-xing-he-ie-mo-xing.md)
-  * [BFC](di-yi-zhang/bfc.md)
-  * [DOCTYPE](di-yi-zhang/doctype.md)
-  * 动画
+* [html&css](htmlandcss.md)
+  * [页面布局](htmlandcss/ye-mian-bu-ju.md)
+  * [css盒模型](htmlandcss/csshe-mo-xing.md)
+  * [BFC](htmlandcss/bfc.md)
+  * [DOCTYPE](htmlandcss/doctype.md)
+  * [动画](htmlandcss/dong-hua.md)
 * [DOM](dom.md)
   * [DOM操作](dom/domcao-zuo.md)
   * [DOM事件](dom/domshi-jian.md)
@@ -41,7 +42,6 @@
   * [gulp](gou-jian-gong-ju/gulp.md)
   * [webpack](gou-jian-gong-ju/webpack.md)
 * [移动端](yi-dong-duan.md)
-* [Node](node.md)
 * [html&css](htmlandcss.md)
   * [页面布局](htmlandcss/ye-mian-bu-ju.md)
   * [css盒模型](htmlandcss/csshe-mo-xing.md)
