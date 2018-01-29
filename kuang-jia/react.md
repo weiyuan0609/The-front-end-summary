@@ -195,8 +195,6 @@ React 实现了一个“合成事件”层（synthetic event system），这个�
 
 “合成事件”会以事件委托（event delegation）的方式绑定到组件最上层，并且在组件卸载（unmount）的时候自动销毁绑定的事件。
 
-
-
 #### react组件生命周期
 
 ![](lifecycle.jpeg)
