@@ -33,7 +33,7 @@
   * [设计模式](she-ji-mo-shi.md)
 * [框架](kuang-jia.md)
   * [jquery](kuang-jia/jquery.md)
-  * vue
+  * [vue](kuang-jia/vue.md)
   * react
   * avalon
 * [模块化](mo-kuai-hua.md)
