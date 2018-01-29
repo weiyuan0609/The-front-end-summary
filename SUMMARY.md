@@ -2,7 +2,6 @@
 
 * [介绍](README.md)
 * [html和css](di-yi-zhang.md)
-  * [页面布局](di-yi-zhang/di-yi-jie.md)
   * [css盒模型](di-yi-zhang/biao-zhun-mo-xing-he-ie-mo-xing.md)
   * [BFC](di-yi-zhang/bfc.md)
   * [DOCTYPE](di-yi-zhang/doctype.md)
@@ -43,4 +42,6 @@
   * [webpack](gou-jian-gong-ju/webpack.md)
 * [移动端](yi-dong-duan.md)
 * [Node](node.md)
+* [html&css](htmlandcss.md)
+  * [页面布局](htmlandcss/ye-mian-bu-ju.md)
 
