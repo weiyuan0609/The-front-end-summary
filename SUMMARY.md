@@ -6,7 +6,6 @@
   * [css盒模型](htmlandcss/csshe-mo-xing.md)
   * [BFC](htmlandcss/bfc.md)
   * [DOCTYPE](htmlandcss/doctype.md)
-  * [动画](htmlandcss/dong-hua.md)
 * [DOM](dom.md)
   * [DOM操作](dom/domcao-zuo.md)
   * [DOM事件](dom/domshi-jian.md)
