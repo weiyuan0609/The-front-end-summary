@@ -24,3 +24,14 @@ function
 jquery源码中推荐的写法：
 当判断obj.a ==null（相当于obj.a===null||obj.a===undefined）
 除这个以外其他都用===
+
+#### 内置对象
+Object
+Array
+Boolean
+Number
+String
+Function
+Date
+RegExp
+Error
