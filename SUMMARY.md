@@ -26,4 +26,5 @@
 * [进阶](jin-jie.md)
   * [渲染机制](xuan-ran-ji-zhi.md)
   * [页面性能](ye-mian-xing-neng.md)
+  * [错误监控](cuo-wu-jian-kong.md)
 
