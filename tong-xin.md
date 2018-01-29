@@ -67,3 +67,10 @@ socket.onopen = function(event) {
   //socket.close()
 };
 ```
+
+#### 跨域通信的几种方式
+1. JSONP
+2. Hash 
+3. postMessage
+4. webSocket
+5. cors
