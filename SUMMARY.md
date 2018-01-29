@@ -41,11 +41,4 @@
   * [git](gou-jian-gong-ju/git.md)
   * [gulp](gou-jian-gong-ju/gulp.md)
   * [webpack](gou-jian-gong-ju/webpack.md)
-* [移动端](yi-dong-duan.md)
-* [html&css](htmlandcss.md)
-  * [页面布局](htmlandcss/ye-mian-bu-ju.md)
-  * [css盒模型](htmlandcss/csshe-mo-xing.md)
-  * [BFC](htmlandcss/bfc.md)
-  * [DOCTYPE](htmlandcss/doctype.md)
-  * [动画](htmlandcss/dong-hua.md)
 
