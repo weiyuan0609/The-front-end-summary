@@ -22,3 +22,8 @@ https://www.cnblogs.com/changyangzhe/p/5762061.html
 
 #### jquery性能优化
 参考： http://caibaojian.com/jquery-performance-optimization.html
+
+#### jQuery UI 与 jquery 的主要区别是： 　
+(1) jQuery是一个js库，主要提供的功能是选择器，属性修改和事件绑定等等。 　
+(2) jQuery UI则是在jQuery的基础上，利用jQuery的扩展性，设计的插件。提供了一些常用的界面元素，诸如对话框、拖动行为、改变大小行为等等。 　
+(3) jQuery本身注重于后台，没有漂亮的界面，而jQuery UI则补充了前者的不足，他提供了华丽的展示界面，使人更容易接受。既有强大的后台，又有华丽的前台。jQuery UI是jQuery插件，只不过专指由jQuery官方维护的UI方向的插件。
