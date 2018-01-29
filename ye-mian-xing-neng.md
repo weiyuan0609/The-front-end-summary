@@ -21,4 +21,8 @@ async 和 defer区别：
     <link rel="dns-prefetch" href="//host_name_to_prefetch.com">
     // HTTPS下默认关闭a标签DNS预解析，而下面是设置开启
     <meta http-equiv="x-dns-prefetch-control" content="on">
-    
+
+#### CDN
+CDN做了两件事，一是让用户访问最近的节点，二是从缓存或者源站获取资源
+
+CDN的工作原理：通过dns服务器来实现优质节点的选择，通过缓存来减少源站的压力。
