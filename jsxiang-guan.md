@@ -3,8 +3,10 @@ JS-web-api: w3c标准（没有规定任何JS基础相关的东西只管定义用
 
 [js核心内容参考博客](http://www.cnblogs.com/wangfupeng1988/p/3977924.html)
 
-#### js使用typeof能得到哪些类型
-值类型和引用类型，即
+#### js,js变量按存储方式分为哪些类型，js使用typeof能得到哪些类型
+值类型和引用类型（值修改，相互干预）
+
+共6种：
 undefined
 string
 number
