@@ -86,3 +86,12 @@ vue的核心：数据绑定 和 视图组件。
 同名钩子函数（bind，inserted，update，componentUpdate，unbind）将混合为一个数组，因此都将被调用，混合对象的钩子将在组件自身钩子之前调用
 
 `methods`，`components`，`directives`将被混为同一个对象。两个对象的键名（方法名，属性名）冲突时，取组件（而非mixin）对象的键值对
+
+#### vue组件通信
+
+非父子组件间通信，Vue 有提供 Vuex，以状态共享方式来实现同信，对于这一点，应该注意考虑平衡，从整体设计角度去考量，确保引入她的必要。
+
+父传子: `this.$refs.xxx`
+子传父: `this.$parent.xxx`
+
+还可以通过`$emit`方法出发一个消息，然后`$on`接收这个消息
