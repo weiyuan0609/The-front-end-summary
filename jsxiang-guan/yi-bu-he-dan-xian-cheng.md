@@ -13,7 +13,7 @@ async 和 defer区别：
 2. async是在加载完之后立即执行，如果是多个，执行顺序和加载顺序无关
 
 #### 异步流程控制
-1. callback
+1. 回调函数（callback）陷入回调地狱，解耦程度特别低
 2. Promise
 3. Stream
 4. Generator
