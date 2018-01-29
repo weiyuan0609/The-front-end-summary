@@ -13,7 +13,7 @@
 * [JS相关](jsxiang-guan.md)
   * [原型和原型链](jsxiang-guan/yuan-xing-he-yuan-xing-lian.md)
   * [作用域和闭包](jsxiang-guan/zuo-yong-yu-he-bi-bao.md)
-  * 异步和单线程
+  * [异步和单线程](jsxiang-guan/yi-bu-he-dan-xian-cheng.md)
 * 网络
   * [HTTP](http.md)
   * [HTTP2.0 和HTTPS](http20-he-https.md)
