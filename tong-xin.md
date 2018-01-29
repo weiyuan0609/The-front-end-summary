@@ -81,7 +81,7 @@ socket.onopen = function(event) {
   
     let scriptTag = document.createElement('script')
     // 其中cb是回调函数参数的名字，cbname是回调函数的名字，这两个名字要与服务端沟通定义
-    scriptTag.src = 'http://hcysun.me/xxx?cb=cbname'
+    scriptTag.src = 'http://baidu.com/xxx?cb=cbname'
     document.body.appendChild(scriptTag)
 * 优点
 1. 可跨域
