@@ -35,7 +35,7 @@
   * [jquery](kuang-jia/jquery.md)
   * [vue](kuang-jia/vue.md)
   * [react](kuang-jia/react.md)
-  * avalon
+  * [avalon](kuang-jia/avalon.md)
 * [模块化](mo-kuai-hua.md)
 * [构建工具](gou-jian-gong-ju.md)
   * [git](gou-jian-gong-ju/git.md)
