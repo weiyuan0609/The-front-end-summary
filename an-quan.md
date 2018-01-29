@@ -10,3 +10,4 @@
 4）涉及敏感操作的请求改为POST请求
 
 #### XSS cross sit script 跨站请求攻击
+参考: http://www.imooc.com/learn/812
