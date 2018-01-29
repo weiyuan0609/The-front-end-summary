@@ -43,3 +43,46 @@ Vue 虽然通过 v-model 支持双向绑定，但是如果引入了类似redux�
 #### v-show和v-if区别
 
 与v-if不同的是，无论v-show的值为true或false，元素都会存在于HTML代码中；而只有当v-if的值为true，元素才会存在于HTML代码中
+
+#### 你如何评价vue
+
+框架能够让我们跑的更快，但只有了解原生的JS才能让我们走的更远。
+
+vue专注于MVVM中的viewModel层，通过双向数据绑定，把view层和Model层连接了起来。核心是用数据来驱动DOM。这种把directive和component混在一起的设计有一个非常大的问题，它导致了很多开发者滥用Directive（指令），出现了到处都是指令的情况。
+
+优点：
+1.不需要setState，直接修改数据就能刷新页面，而且不需要react的shouldComponentUpdate就能实现最高效的渲染路径。
+2.渐进式的开发模式，模版方式->组件方式->路由整合->数据流整合->服务器渲染。上手的曲线更加平滑简单，而且不像react一上来就是组件全家桶
+3.v-model给开发后台管理系统带来极大的便利，反观用react开发后台就是个杯具
+4.html，css与js比react更优雅地结合在一个文件上。
+
+缺点：指令太多，自带模板扩展不方便；
+组件的属性传递没有react的直观和明显
+
+#### 说说你对MVVM的理解
+
+Model层代表数据模型，可以在Model中定义数据修改和操作业务逻辑；
+view 代表UI组件。负责将数据模型转换成UI展现出来
+ViewModel 是一个同步View和Model的对象
+
+用户操作view层，view数据变化会同步到Model，Model数据变化会立即反应到view中。viewModel通过双向数据绑定把view层和Model层连接了起来
+
+#### 为什么选择vue
+
+reactjs 的全家桶方式，实在太过强势，而自己定义的 JSX 规范，揉和在 JS 的组件框架里，导致如果后期发生页面改版工作，工作量将会巨大。
+
+vue的核心：数据绑定 和 视图组件。
+
+- Vue的数据驱动：数据改变驱动了视图的自动更新，传统的做法你得手动改变DOM来改变视图，vuejs只需要改变数据，就会自动改变视图，一个字：爽。再也不用你去操心DOM的更新了，这就是MVVM思想的实现。
+
+- 视图组件化：把整一个网页的拆分成一个个区块，每个区块我们可以看作成一个组件。网页由多个组件拼接或者嵌套组成
+
+#### vue中mixin与extend区别
+
+全局注册混合对象，会影响到所有之后创建的vue实例，而`Vue.extend`是对单个实例进行扩展。
+
+-  mixin 混合对象（组件复用）
+
+同名钩子函数（bind，inserted，update，componentUpdate，unbind）将混合为一个数组，因此都将被调用，混合对象的钩子将在组件自身钩子之前调用
+
+`methods`，`components`，`directives`将被混为同一个对象。两个对象的键名（方法名，属性名）冲突时，取组件（而非mixin）对象的键值对
