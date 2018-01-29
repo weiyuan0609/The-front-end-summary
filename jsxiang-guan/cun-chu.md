@@ -21,6 +21,6 @@ localStorage.setItem(key,value),localStorage.getItem(key, value)
 
 
 #### cookie 和 session区别
-1.cookie数据存放在客户的浏览器上，session数据放在服务器上。
-2.session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能。考虑到减轻服务器性能方面，应当使用COOKIE。
+1. cookie数据存放在客户的浏览器上，session数据放在服务器上。
+2. session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能。考虑到减轻服务器性能方面，应当使用COOKIE。
 
