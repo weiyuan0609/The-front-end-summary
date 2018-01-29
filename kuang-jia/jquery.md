@@ -19,3 +19,6 @@ https://www.cnblogs.com/changyangzhe/p/5762061.html
 4.避免在插件内部使用$作为jQuery对象的别名,而应使用完整的jQuery来表示，这样可以避免冲突或使用闭包来避免
 5.所有的方法或函数插件，都应当一分好结尾，否则压缩的时候可能出现问题。在插件头部加上分号，这样可以避免他人的不规范代码给插件带来影响
 6.在插件中通过$.extent({})封装全局函数,选择器插件，扩展已有的object对象通过$.fn.extend({})封装对象方法插件
+
+#### jquery性能优化
+参考： http://caibaojian.com/jquery-performance-optimization.html
