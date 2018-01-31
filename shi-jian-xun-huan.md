@@ -1,4 +1,5 @@
 #### 事件循环
+参考：http://www.ruanyifeng.com/blog/2014/10/event-loop.html
 
 浏览器中, js引擎线程会循环从 任务队列 中读取事件并且执行, 这种运行机制称作 Event Loop \(事件循环\).
 
