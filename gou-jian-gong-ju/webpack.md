@@ -1,3 +1,5 @@
+参考：http://webpack.wuhaolin.cn/
+
 #### loader和plugin区别
 loader用于加载某些资源文件，因为webpack本身只能打包CommonJS规范的js文件，对于其他资源，例如css，图片等，是没有办法加载的，这就需要对应的loader将资源转换
 plugin用于扩展webpack的功能，直接作用于webpack，loader只专注于转换文件，而plugin不仅局限于资源加载
