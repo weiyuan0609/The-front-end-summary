@@ -47,3 +47,4 @@ cluster可以用来让Node.js充分利用多核cpu的性能
 参考：
 http://www.ruanyifeng.com/blog/2014/05/restful_api.html
 http://www.ruanyifeng.com/blog/2011/09/restful
+https://segmentfault.com/a/1190000005766732
