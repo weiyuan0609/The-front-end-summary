@@ -44,5 +44,6 @@
 * [移动端](yi-dong-duan.md)
 * [node](node.md)
 * [SQL](sql.md)
+* [小程序](xiao-cheng-xu.md)
 * [扩展](kuo-zhan.md)
 
