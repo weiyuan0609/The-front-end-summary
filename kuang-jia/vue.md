@@ -95,3 +95,6 @@ vue的核心：数据绑定 和 视图组件。
 子传父: `this.$parent.xxx`
 
 还可以通过`$emit`方法出发一个消息，然后`$on`接收这个消息
+
+参考：
+https://segmentfault.com/a/1190000012315822
